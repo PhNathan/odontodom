@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pesquisar Horários</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js">"</script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/home.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#pesquisaCpfRecepcionista").mask("999.999.999-99");
+		$('#cro').mask(' 0000-AA');
+	});
+</script>
+
+</head>
+<body>
+	<div class="menu">
+		<div class="menu-wraper">
+		<div class="box-usuario">
+			
+			<div class="avatar-usuario">
+				<i class="fa fa-user"></i>
+			</div><!--avatar-usuario-->
+			
+			<div class="nome-usuario">
+				<p>Phelipe Nathan</p>
+				<p>Administrador</p>
+			</div><!--nome-usuario-->
+		</div><!--box-usuario-->
+		<div class="itens-menu">
+			<h2>Administração</h2>
+			<a href="relatoriodeAtendimentoDentista.html" >Relatório de Atendimento/Dentista </a>
+			<a href="relatoriodeAtendimentoPaciente.html" >Relatório de Paciente </a>
+			<a href="relatoriodeAtendimentoGeral.html" >Relatório de Geral </a>
+			<a  href="cadastrarDentista.html">Cadastrar Dentista</a>
+			<a  href="consultarDentista.html">Consultar Dentista</a>
+			<a  href="relatorioRecepcionista.html">Relatório de Recepcionista</a>
+			<a  href="relatorioDentista.html">Relatório de Dentista</a>
+			<h2>Recepcionista</h2>
+			<a  href="cadastroConsulta.html">Cadastrar Consulta</a>
+			<a  href="pesquisarConsulta.html">Pesquisar Consulta </a>
+			<a  href="cadastrarPaciente.html">Cadastrar Paciente </a>
+			<a  href="consultarPaciente.html">Pesquisar Paciente </a>
+			<a  href="cadastrarAtendimento.html">Cadastrar Atendimento</a>
+			<a  href="consultarAtendimento.html">Consultar Atendimento</a>
+			<a  href="cadastrarRecepcionista.html">Cadastrar Recepcionista </a>
+			<a  href="consultarRecepcionista.html">Consultar Recepcionista </a>
+			<h2>Dentista</h2>
+			<a  href="cadastrarDocAtendimento.html">cadastrar Documentação de Atendimento</a>
+			<a  href="consultarDescAtendimento.html">Consultar Desc. de Atendimento</a>
+			<a  href="">Cadastrar </a>
+			<h2>Estoque</h2>
+			<a  href="cadastrarMaterial.html">Cadastrar Material</a>
+			<a  href="consultarMaterial.html">Consultar Material</a>
+			<a  href="controleMateriais.html">Relatório de controle de materiais</a>
+			<a  href="relatEstoqueMateriais.html">Relatório de estoque de materiais</a>
+			<h2>Ferramentas</h2>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<h2>Paciente</h2>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<h2>Financeiro</h2>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+			<a  href="">Cadastrar </a>
+
+		</div><!--itens-menu-->
+	</div><!--menu-wraper-->
+	</div><!--menu-->
+	<header>
+		<div class="center">
+			<div class="menu-btn">
+				<i class="fa fa-bars"></i>
+			</div><!--menu-btn-->
+			
+		<div class="loggout">
+			<a href="home.html"><i class="fas fa-home"></i> <span>Página Inicial</span></a>
+			<div style="padding: 0 20px;display: inline;"></div>
+			<a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Sair</span></a>
+			</div><!--loggout-->
+			<div class="clear"></div><!--clear-->
+		</div><!--center-->
+	</header>
+	<div class="content">
+		
+		<div class="box-content">
+	<h2><i class="fas fa-search"></i> Pesquisar Horários</h2>
+
+	<form method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label><i class="fas fa-stethoscope"></i> Código da Consulta :</label>
+			<select name="codConsulta">
+				<option>1- Manutenção</option>
+				<option>2- Cirurgia</option>
+				<option>3- Limpeza</option>
+				<option>4- Clareamento</option>
+			</select>
+			
+		<div class="form-group">
+
+		 <div class="form-group">
+		 	
+			<label><i class="fas fa-id-card"></i> CPF:</label>
+			<input type="text" name="pesquisaCpfDentista" id="pesquisaCpfDentista" placeholder="Digite CPF do(a) Paciente" >
+		</div><!--form-group-->
+		<div class="form-group">
+		 	
+			<label><i class="fas fa-id-card"></i> CRO:</label>
+			<input type="text" name="cro" id="cro" placeholder="Digite CRO do(a) Dentista" >
+		</div><!--form-group-->
+		
+		
+		
+	<div class="form-group">
+
+			<a href="listarHorarios.html">Consultar</a>
+			<input type="reset" name="clear" value="Limpar">
+			<!--Quando passar para o backend Mudar para os inputs de botão que estão abaixo-->
+			<!--
+				<input type="submit" name="acao" value="Adicionar"> 
+				<input type="reset" name="clear" value="Limpar">-->
+			
+		</div><!--form-group-->
+		
+		</div><!--form-group-->
+		
+		
+		
+
+		
+
+
+
+
+	</form><!--form com post-->
+
+
+</div><!--box-content-->
+		
+	</div><!--content-->
+	<!--
+	<script src="js/jquery.js">"</script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/home.js"></script>-->
+	
+  	
+
+</body>
+</html>
