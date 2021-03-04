@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="js/jquery.js">"</script>
 	<script src="js/jquery.mask.js"></script>
 	<script src="js/home.js"></script>
@@ -20,6 +20,33 @@
 		$("#telefonePaciente").mask("(99) 9999-9999");
 	});
 </script>
+<style type="text/css">
+	
+	.itens-menu-paciente{
+	margin-top: 30px;
+}
+
+.itens-menu-paciente h2{
+	text-align: left;
+	font-weight: 300;
+	font-size: 18px;
+	background: #977BED;
+	color: white;
+	padding: 8px;
+}
+
+.itens-menu-paciente a{
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid #D9BBE7;
+}
+
+	
+</style>
 
 </head>
 <body>
@@ -36,7 +63,7 @@
 				
 			</div><!--nome-usuario-->
 		</div><!--box-usuario-->
-		<div class="itens-menu">
+		<div class="itens-menu-paciente">
 			<h2>Minhas Consultas</h2>
 			<a  href="ver-consultas.html">Ver consultas</a>
 			<h2>Editar informações</h2>
@@ -46,14 +73,14 @@
 		</div><!--itens-menu-->
 	</div><!--menu-wraper-->
 	</div><!--menu-->
-	<header>
+	<header class="header-paciente">
 		<div class="center">
 			<div class="menu-btn">
 				<i class="fa fa-bars"></i>
 			</div><!--menu-btn-->
 			
 		<div class="loggout">
-			<a href="home.html"><i class="fas fa-home"></i> <span>Página Inicial</span></a>
+			<a href="home-paciente.html"><i class="fas fa-home"></i> <span>Página Inicial</span></a>
 			<div style="padding: 0 20px;display: inline;"></div>
 			<a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Sair</span></a>
 			</div><!--loggout-->
