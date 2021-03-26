@@ -54,6 +54,8 @@ body{
 */
 
 
+
+
 .dom{
 
 	padding-bottom: 50px;
@@ -425,13 +427,19 @@ a.btn.order{
 
 .itens-menu-paciente a{
 	display: block;
+	width: 100%;
 	padding: 8px;
 	font-weight: 300;
 	font-size: 16px;
 	text-decoration: none;
 	color: black;
-	border-bottom: 2px solid #D9BBE7;
+	border-bottom: 1px solid #ccc;
 }
+
+.itens-menu-paciente li:nth-last-of-type(1){
+	border-bottom:none;
+}
+
 
 .itens-menu a{
 	display: block;

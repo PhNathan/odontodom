@@ -6,10 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script src="js/jquery.js">"</script>
-	<script src="js/jquery.mask.js"></script>
-	<script src="js/home.js"></script>
+	
 </script>
 <style type="text/css">
 	
@@ -17,14 +16,29 @@
 	margin-top: 30px;
 }
 
-.itens-menu-paciente h2{
+.itens-menu-paciente .mn{
 	text-align: left;
 	font-weight: 300;
 	font-size: 18px;
 	background: #977BED;
 	color: white;
 	padding: 8px;
+	cursor: pointer;
 }
+
+ ul.submn1{
+	background-color: white;
+	padding: 5px 30px;
+	display: none;
+	border-bottom: 2px solid #CCC;
+
+}
+
+li{
+	list-style-type: none;
+	
+}
+
 
 .itens-menu-paciente a{
 	display: block;
@@ -33,7 +47,7 @@
 	font-size: 16px;
 	text-decoration: none;
 	color: black;
-	border-bottom: 2px solid #D9BBE7;
+	
 }
 
 	
@@ -54,12 +68,15 @@
 			</div><!--nome-usuario-->
 		</div><!--box-usuario-->
 		<div class="itens-menu-paciente">
+
+			<li><a title="Consultas" class="mn">Minhas Consultas</a>
+						<ul class="submn1">
+							<li><a href="ver-consultas.html" >Ver consultas</a></li>
+							<li><a href="editar-informacoes.html" >Editar</a></li>
+						</ul>
+			</li> 
 			
-			<h2>Minhas Consultas</h2>
-			<a  href="ver-consultas.html">Ver consultas</a>
-		
-			<h2>Editar informações</h2>
-			<a  href="editar-informacoes.html">Editar</a>
+			
 
 		</div><!--itens-menu-->
 	</div><!--menu-wraper-->
@@ -156,7 +173,10 @@
 		
 	</div><!--content-->
 	
-	
+	<script src="../js/scripts.js"></script>
+	<script src="../js/jquery.js">"</script>
+	<script src="../js/jquery.mask.js"></script>
+	<script src="../js/home.js"></script>
 
 </body>
 </html>
