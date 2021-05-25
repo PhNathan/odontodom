@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listar Consulta</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
+	
+		
+	
+</head>
+<style type="text/css">
+	
+	.itens-menu-paciente{
+	margin-top: 30px;
+}
+
+.itens-menu-paciente .mn{
+	text-align: left;
+	font-weight: 300;
+	font-size: 18px;
+	background: #977BED;
+	color: white;
+	padding: 8px;
+	cursor: pointer;
+}
+
+ ul.submn1{
+	background-color: white;
+	padding: 5px 30px;
+	display: none;
+	border-bottom: 2px solid #CCC;
+
+}
+
+li{
+	list-style-type: none;
+	
+}
+
+
+.itens-menu-paciente a{
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	
+}
+table{
+	font-weight: 300;
+	min-width: 900px;
+	margin: 20px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+	background:#73DBFF;
+	color: white;
+}
+
+table tr{
+	border-bottom: 1px solid #ccc;
+}
+
+table tr{
+	color: #555
+}
+
+table td{
+	padding: 8px;
+}
+
+	
+</style>
+<body>
+	<div class="menu">
+		<div class="menu-wraper">
+		<div class="box-usuario">
+			
+			<div class="avatar-usuario">
+				<img src="img/avatar2.png">
+			</div><!--avatar-usuario-->
+			
+			<div class="nome-usuario">
+				<p>Phelipe Nathan</p>
+				<p>Administrador</p>
+			</div><!--nome-usuario-->
+		</div><!--box-usuario-->
+		<div class="itens-menu-paciente">
+			<li><a title="Consultas" class="mn">Minhas Consultas</a>
+						<ul class="submn1">
+							<li><a href="ver-consultas.html" >Ver consultas</a></li>
+							<li><a href="editar-informacoes.html" >Editar</a></li>
+						</ul>
+			</li> 
+		</div><!--itens-menu-->
+	</div><!--menu-wraper-->
+	</div><!--menu-->
+	<header class="header-paciente">
+		<div class="center">
+			<div class="menu-btn">
+				<i class="fa fa-bars"></i>
+			</div><!--menu-btn-->
+			
+		<div class="loggout">
+			<a href="home-paciente.html"><i class="fas fa-home"></i> <span>Página Inicial</span></a>
+			<div style="padding: 0 20px;display: inline;"></div>
+			<a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Sair</span></a>
+			</div><!--loggout-->
+			<div class="clear"></div><!--clear-->
+		</div><!--center-->
+	</header>
+	<div class="content">
+	<div class="box-content">
+	<h2><i class="fas fa-stethoscope"></i> Consultas Marcadas</h2>
+	<div class="wraper-table">
+	<table>
+		<tr>
+			
+			<td><i class="fas fa-calendar-alt"></i> Data da Consulta</td>
+			<td><i class="fas fa-clock"></i> Horário de Consulta</td>
+			<td><i class="fab fa-whatsapp"></i> Remarcar Consulta</td>
+			<td><i class="fas fa-window-close"></i> Cancelar Consulta</td>
+			
+		
+		</tr>
+			<tr>
+			
+			<td><i class="fas fa-calendar-alt"></i> 21/08/2020</td>
+			<td><i class="fas fa-clock"></i> 14:50</td>
+			<td><a class="btn-whats"><i class="fab fa-whatsapp"></i> Para remarcar consulta, clique no whatsapp</a></td>
+			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Cancelar</td>
+			
+		</tr>
+
+		<tr>
+			
+			<td><i class="fas fa-calendar-alt"></i> 29/08/2020</td>
+			<td><i class="fas fa-clock"></i> 11:50</td>
+			<td><a class="btn-whats" ><i class="fab fa-whatsapp"></i> Para remarcar consulta, clique no whatsapp </a></td>
+			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Cancelar</td>
+			
+		</tr>
+
+		<tr>
+			
+			<td><i class="fas fa-calendar-alt"></i> 20/02/2021</td>
+			<td><i class="fas fa-clock"></i> 12:35</td>
+			<td><a class="btn-whats" ><i class="fab fa-whatsapp"></i> Para remarcar consulta, clique no whatsapp </a></td>
+			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Cancelar</td>
+			
+		</tr>
+			
+
+			<tr>
+			
+			<td><i class="fas fa-calendar-alt"></i> 14/03/2021</td>
+			<td><i class="fas fa-clock"></i> 14:20</td>
+			<td><a class="btn-whats" ><i class="fab fa-whatsapp"></i> Para remarcar consulta, clique no whatsapp </a></td>
+			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Cancelar</td>
+			
+		</tr>	
+		<iframe width="70" height="70" src="https://whatsmagic.bitnix.com.br/embed/?id=44ad037327&tl=NTU2MTk4NDQ1NzE1OQ==" frameborder="0" style="position:fixed;z-index:1000;bottom:20px;right:20px;"></iframe>
+	
+	</table>
+</div><!--wraper-table-->
+
+</div><!--box-content-->
+		
+	</div><!--content-->
+	<script src="../js/scripts.js"></script>
+	<script src="../js/jquery.js">"</script>
+	<script src="../js/jquery.mask.js"></script>
+	<script src="../js/home.js"></script>
+	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  	<script>tinymce.init({
+  	selector:'.tinymce',
+  	plugins: 'image', 
+  	height:300
+  	//menubar: 'insert',
+	});</script>
+
+</body>
+</html>
+
+  

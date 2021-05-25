@@ -20,6 +20,7 @@
 		$("#telefonePaciente").mask("(99) 9999-9999");
 	});
 </script>
+<script src="js/scripts.js"></script>
 
 </head>
 <body>
@@ -36,49 +37,125 @@
 				<p>Administrador</p>
 			</div><!--nome-usuario-->
 		</div><!--box-usuario-->
-		<div class="itens-menu">
-			<h2>Administração</h2>
-			<a href="relatoriodeAtendimentoDentista.html" >Relatório de Atendimento/Dentista </a>
-			<a href="relatoriodeAtendimentoPaciente.html" >Relatório de Paciente </a>
-			<a href="relatoriodeAtendimentoGeral.html" >Relatório de Geral </a>
-			<a  href="cadastrarDentista.html">Cadastrar Dentista</a>
-			<a  href="consultarDentista.html">Consultar Dentista</a>
-			<a  href="relatorioRecepcionista.html">Relatório de Recepcionista</a>
-			<a  href="relatorioDentista.html">Relatório de Dentista</a>
-			<h2>Recepcionista</h2>
-			<a  href="cadastroConsulta.html">Cadastrar Consulta</a>
-			<a  href="pesquisarConsulta.html">Pesquisar Consulta </a>
-			<a  href="cadastrarPaciente.html">Cadastrar Paciente </a>
-			<a  href="consultarPaciente.html">Pesquisar Paciente </a>
-			<a  href="cadastrarAtendimento.html">Cadastrar Atendimento</a>
-			<a  href="consultarAtendimento.html">Consultar Atendimento</a>
-			<a  href="cadastrarRecepcionista.html">Cadastrar Recepcionista </a>
-			<a  href="consultarRecepcionista.html">Consultar Recepcionista </a>
-			<h2>Dentista</h2>
-			<a  href="cadastrarDocAtendimento.html">cadastrar Documentação de Atendimento</a>
-			<a  href="consultarDescAtendimento.html">Consultar Desc. de Atendimento</a>
-			<a  href="">Cadastrar </a>
-			<h2>Estoque</h2>
-			<a  href="cadastrarMaterial.html">Cadastrar Material</a>
-			<a  href="consultarMaterial.html">Consultar Material</a>
-			<a  href="controleMateriais.html">Relatório de controle de materiais</a>
-			<a  href="relatEstoqueMateriais.html">Relatório de estoque de materiais</a>
-			<h2>Ferramentas</h2>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<h2>Paciente</h2>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<h2>Financeiro</h2>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-			<a  href="">Cadastrar </a>
-		</div><!--itens-menu-->
+		<style type="text/css">
+	
+	.itens-menu-total{
+	margin-top: 30px;
+}
+
+.itens-menu-total .mn{
+	text-align: left;
+	font-weight: 300;
+	font-size: 18px;
+	background: #1E90FF;
+	color: white;
+	padding: 8px;
+	cursor: pointer;
+}
+
+ ul.submn1{
+	background-color: white;
+	padding: 5px 30px;
+	display: none;
+	border-bottom: 2px solid #CCC;
+
+}
+
+li{
+	list-style-type: none;
+	
+}
+
+
+.itens-menu-total a{
+	border-bottom: 1px solid black;
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	
+}
+
+	
+</style>
+		<div class="itens-menu-total">
+			
+
+			<li><a title="Administração" class="mn">Administração</a>
+						<ul class="submn1">
+							<li><a href="relatoriodeAtendimentoDentista.html" >Relatório de Atendimento/Dentista </a></li>
+							<li><a href="relatoriodeAtendimentoPaciente.html" >Relatório de Paciente </a></li>
+							<li><a href="relatoriodeAtendimentoGeral.html" >Relatório de Geral </a></li>
+							<li><a  href="cadastrarDentista.html">Cadastrar Dentista</a></li>
+							<li><a  href="consultarDentista.html">Consultar Dentista</a></li>
+							<li><a  href="relatorioRecepcionista.html">Relatório de Recepcionista</a></li>
+							<li><a  href="relatorioDentista.html">Relatório de Dentista</a></li>
+
+						</ul>
+			</li> 
+	
+			<li><a title="Recepcionista" class="mn">Recepcionista</a>
+						<ul class="submn1">
+							<li><a  href="cadastroConsulta.html">Cadastrar Consulta</a></li>
+							<li><a  href="pesquisarConsulta.html">Pesquisar Consulta </a></li>
+							<li><a  href="cadastrarPaciente.html">Cadastrar Paciente </a></li>
+							<li><a  href="consultarPaciente.html">Pesquisar Paciente </a></li>
+							<li><a  href="cadastrarAtendimento.html">Cadastrar Atendimento</a></li>
+							<li><a  href="consultarAtendimento.html">Consultar Atendimento</a></li>
+							<li><a  href="cadastrarRecepcionista.html">Cadastrar Recepcionista </a></li>
+							<li><a  href="consultarRecepcionista.html">Consultar Recepcionista </a></li>
+
+						</ul>
+			</li> 
+			<li><a title="Dentista" class="mn">Dentista</a>
+						<ul class="submn1">
+							<li><a  href="cadastrarDocAtendimento.html">cadastrar Documentação de Atendimento</a></li>
+							<li><a  href="consultarDescAtendimento.html">Consultar Desc. de Atendimento</a></li>
+							
+						</ul>
+			</li> 
+			
+			<li><a title="Estoque" class="mn">Estoque</a>
+						<ul class="submn1">
+							<li><a  href="cadastrarMaterial.html">Cadastrar Material</a></li>
+							<li><a  href="consultarMaterial.html">Consultar Material</a></li>
+							<li><a  href="controleMateriais.html">Relatório de controle de materiais</a></li>
+							<li><a  href="relatEstoqueMateriais.html">Relatório de estoque de materiais</a></li>
+							
+						</ul>
+			</li> 
+			<li><a title="Agenda" class="mn">Agenda</a>
+						<ul class="submn1">
+							<li><a  href="cadastrarAgenda.html">Cadastrar Agenda</a></li>
+							<li><a  href="consultaragenda.html">Consultar Agenda </a></li>
+							<li><a  href="cadastrarhorario.html">Cadastrar Horários</a></li>
+							<li><a  href="consultarhorarios.html">Consultar Horários </a></li>
+							
+
+						</ul>
+			</li> 
+			<li><a title="Paciente" class="mn">Paciente</a>
+						<ul class="submn1">
+							<li><a  href="cadastraranamneses.html">Cadastrar Anamneses</a></li>
+							<li><a  href="consultaanamneses.html">Consultar Anamneses </a></li>
+							
+
+						</ul>
+			</li> 
+			<li><a title="Financeiro" class="mn">Financeiro</a>
+						<ul class="submn1">
+							<li><a  href="cadastrarFinanceiro.html">Cadastrar Financeiro</a></li>
+							<li><a  href="consultarFinanceiro.html">Consultar Finanças </a></li>
+							<li><a  href="relatorioFinanceiro.html">Relatórios Financeiros </a></li>
+							<li><a  href="relatoriofinanceiroatual.html">Relatório Financeiro Atual </a></li>
+							
+
+						</ul>
+			</li> 
+
+		</div><!--itens-menu-total-->
 	</div><!--menu-wraper-->
 	</div><!--menu-->
 	<header>
