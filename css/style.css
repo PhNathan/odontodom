@@ -679,7 +679,6 @@ a.btn.order{
 
 
 
-
 .box-alert{
 	text-align: center;
 	width: 100%;
@@ -692,8 +691,15 @@ a.btn.order{
 	background: #3d4e54;
 }
 
-.menu-active::before{
-	content: ' ';
+.container{
+	height: 60vh;
+}
+
+.chart-wraper{
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	
 }
 
 
@@ -729,6 +735,7 @@ a.btn.order{
 		width: 100%;
 		padding-top: 40%;
 	}
+	
 }
 @media screen and (max-width: 400px){
 	.box-metrica-wraper h2{
