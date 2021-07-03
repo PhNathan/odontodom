@@ -180,28 +180,47 @@ li{
 	</header>
 	<div class="content">
 	<div class="box-content">
-	<h2><i class="fas fa-user-injured"></i> Pacientes</h2>
+		<h2><i class="fas fa-user-injured"></i> Pacientes</h2>
+		<div class="busca">
+		<h4><i class="fa fa-search"></i> Buscar Paciente</h4>
+		<form method="post">
+			<input placeholder="Procure por: Nome, E-mail, CPF" type="text" name="busca">
+			<input type="submit" name="acao" value="buscar">
+		</form>
+	</div><!--busca-->
+
+
+	
 	<div class="wraper-table">
 	<table>
 		<tr>
+			<td><i class="fas fa-id-card"></i> id</td>
 			<td><i class="fas fa-user-injured"></i> Paciente</td>
+			<td><i class="fas fa-id-card"></i> E-mail</td>
 			<td><i class="fas fa-id-card"></i> CPF</td>
+			<td><i class="fas fa-id-card"></i> sexo</td>
 			<td><i class="fas fa-edit"></i> #</td>
 			<td><i class="fas fa-trash-alt"></i> #</td>
 			
 		
 		</tr>
 			<tr>
-			<td><i class="fas fa-user-injured"></i> Rafael Maciel</td>
-			<td><i class="fas fa-id-card"></i> 111.111.111-11</td>
+			<td> 1</td>
+			<td> Rafael Maciel</td>
+			<td> Rafael.maciel@gmail.com</td>
+			<td> 111.111.111-11</td>
+			<td> M</td>
 			<td><a class="btn-edit" href="editarPaciente.html"><i class="fas fa-pencil-alt"></i> Editar</a></td>
 			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Excluir</td>
 			
 		</tr>
 
 		<tr>
-			<td><i class="fas fa-user-injured"></i> Ludmila Leal</td>
-			<td><i class="fas fa-id-card"></i> 000.000.000-00</td>
+			<td> 2</td>
+			<td> Lucia</td>
+			<td> Lucia@gmail.com</td>
+			<td> 111.111.111-11</td>
+			<td> F</td>
 			<td><a class="btn-edit" href="editarPaciente.html"><i class="fas fa-pencil-alt"></i> Editar</a></td>
 			<td><a actionBtn="delete" class="btn-delete" onclick="funcao1()" href=""><i class="fas fa-window-close"></i> Excluir</td>
 			
@@ -211,7 +230,12 @@ li{
 	
 	</table>
 </div><!--wraper-table-->
-
+<div class="form-group">
+		<a href="Pagina de cadastro">Cadastrar Paciente</a> 
+		
+		</div><!--form-group-->
+</div><!--form-group-->
+		
 </div><!--box-content-->
 		
 	</div><!--content-->

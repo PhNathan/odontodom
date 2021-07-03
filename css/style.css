@@ -518,7 +518,7 @@ a.btn.order{
 }
 
 .table-responsive .row:nth-of-type(1){
-	background: #1E90FF;
+	background: #7B68EE;;
 	font-weight: bold;
 	border-bottom: 1px solid #333;
 	border-right: 1px solid #333;
@@ -528,11 +528,12 @@ a.btn.order{
 }
 
 .table-responsive .row{
-	background: #6495ED;
+	background: white;
+	color: black;
 	font-weight: bold;
 	/*border-bottom: 1px solid #333;*/
 	/*border-right: 1px solid #333;*/
-	border-top: 1px solid #333;
+	border: 1px solid #333;
 	/*border-left:1px solid #333;*/
 	
 	text-align: center;
@@ -540,9 +541,15 @@ a.btn.order{
 	padding: 8px 0;
 }
 
+.horarioPaciente {
+	color: white;
+}
 
+.nomePaciente{
+	color: white;
+}
 .col{
-	color:  white;
+	color:  black;
 	float: left;
 	width: 50%;
 }
@@ -662,8 +669,9 @@ a.btn.order{
 }
 .box-content .form-group a{
 	text-decoration: none;
-	width: 100px;
-	height: 50px;
+	padding: 10px;
+	width: 200px;
+	height: 60px;
 	cursor: pointer;
 	outline: none;
 	margin-top: 8px;
@@ -674,6 +682,22 @@ a.btn.order{
 	margin-left: 45%;
 }
 
+
+.busca{
+	margin: 10px 0;
+	width: 100%;
+	padding: 4px 10px;
+}
+
+.busca form{
+	margin: 0;
+}
+
+.busca h4{
+	font-weight: lighter;
+	font-size: 20px;
+	color: black;
+}
 
 
 
